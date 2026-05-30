@@ -47,7 +47,7 @@
         bt_mac: bt_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1>, <&macro_wait_time 200>, <&to 4>;
+            bindings = <&bt BT_SEL 1>, <&macro_wait_time 2>, <&to 4>;
 
             label = "BT_MAC";
         };
@@ -85,10 +85,10 @@
 
         win_1 {
             bindings = <
-&kp Q            &kp W         &kp E             &kp R                           &kp T                                                           &kp Y        &kp U  &kp I      &kp O    &lt 5 P
-&mt LEFT_ALT A   &kp S         &kp D             &kp F                           &kp G                                            &kp LS(MINUS)  &kp H        &kp J  &kp K      &kp L    &lt 6 MINUS
-&kp Z            &kp X         &kp C             &kp V                           &kp B        &lt 3 TAB                           &lt 7 B        &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&lt 5 LA(GRAVE)  &kp LEFT_ALT  &kp LEFT_COMMAND  &mt LEFT_SHIFT INTERNATIONAL_5  &lt 2 SPACE  &mt LEFT_CONTROL INTERNATIONAL_4    &kp BACKSPACE  &lt 1 ENTER                             &kp ESCAPE
+&kp Q            &kp W         &kp E             &kp R                           &kp T                                                           &kp Y        &kp U  &kp I      &kp O    &lt 8 P
+&mt LEFT_ALT A   &kp S         &kp D             &kp F                           &kp G                                            &kp LS(MINUS)  &kp H        &kp J  &kp K      &kp L    &lt 9 MINUS
+&kp Z            &kp X         &kp C             &kp V                           &kp B        &lt 3 TAB                           &lt 10 B       &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&lt 8 LA(GRAVE)  &kp LEFT_ALT  &kp LEFT_COMMAND  &mt LEFT_SHIFT INTERNATIONAL_5  &lt 2 SPACE  &mt LEFT_CONTROL INTERNATIONAL_4    &kp BACKSPACE  &lt 1 ENTER                             &kp ESCAPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -129,13 +129,44 @@
 
         mac_1 {
             bindings = <
-&kp Q                   &kp W     &kp E     &kp R                      &kp T                                                &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A                   &kp S     &kp D     &kp F                      &kp G                                     &kp EQUAL  &kp H      &kp J  &kp K      &kp L    &kp MINUS
-&kp Z                   &kp X     &kp C     &kp V                      &kp B      &kp TAB                        &kp B      &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH
-&lt 5 LS(LG(NUMBER_4))  &kp LALT  &kp LGUI  &mt LEFT_SHIFT LANGUAGE_2  &kp SPACE  &mt LEFT_COMMAND LANGUAGE_1    &kp BSPC   &kp ENTER                             &kp ESC
+&kp Q            &kp W     &kp E             &kp R                           &kp T                                                       &kp Y        &kp U  &kp I      &kp O    &lt 8 P
+&kp A            &kp S     &kp D             &kp F                           &kp G                                            &kp EQUAL  &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&kp Z            &kp X     &kp C             &kp V                           &kp B        &lt 7 TAB                           &lt 10 B   &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH
+&lt 8 LS(SPACE)  &kp LALT  &kp LEFT_CONTROL  &mt LEFT_SHIFT INTERNATIONAL_1  &lt 6 SPACE  &mt LEFT_COMMAND INTERNATIONAL_2    &kp BSPC   &lt 5 ENTER                             &kp ESC
             >;
 
             sensor-bindings = <&scroll_up_down>;
+        };
+
+        mac_2 {
+            bindings = <
+&kp SQT               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans          &trans                                                    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans             &kp DOLLAR     &kp AT_SIGN
+&kp DOLLAR            &kp PERCENT           &kp AMPERSAND          &kp COLON       &kp LS(DOUBLE_QUOTES)                      &kp COLON      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES  &kp PERCENT    &kp CARET
+&kp EXCLAMATION       &kp DOUBLE_QUOTES     &kp HASH               &kp SEMICOLON   &kp SQT                &kp TAB             &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT            &kp AMPERSAND  &kp TILDE
+&kp LS(LG(NUMBER_4))  &kp LEFT_ALT          &kp LEFT_CONTROL       &kp LEFT_SHIFT  &trans                 &kp LEFT_COMMAND    &kp BACKSPACE  &trans                                                                         &kp ESCAPE
+            >;
+
+            sensor-bindings = <&scroll_right_left>;
+        };
+
+        mac_3 {
+            bindings = <
+&kp F7  &kp F8        &kp F9            &kp F10         &trans                                 &kp N7   &kp N8  &kp N9  &kp PLUS      &trans
+&kp F4  &kp F5        &kp F6            &kp F11         &trans                      &kp EQUAL  &kp N4   &kp N5  &kp N6  &kp CARET     &kp MINUS
+&kp F1  &kp F2        &kp F3            &kp F12         &trans  &trans              &trans     &kp N1   &kp N2  &kp N3  &kp ASTERISK  &kp SLASH
+&trans  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans  &kp LEFT_COMMAND    &kp N0     &kp DOT                                &kp ESCAPE
+            >;
+
+            sensor-bindings = <&scroll_up_down>;
+        };
+
+        mac_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+            >;
         };
 
         MOUSE {
