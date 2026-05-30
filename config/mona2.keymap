@@ -36,21 +36,27 @@
     };
 
     macros {
-        bt_win: to_layer_0 {
+        bt_win: bt_win {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap &bt BT_SEL 0>,
+                <&tog_off 0 &tog_off 1 &tog_off 2 &tog_off 3 &tog_off 4 &tog_off 5 &tog_off 6 &tog_off 7>,
                 <&macro_wait_time 200>,
-                <&macro_tap &to 0>;
+                <&bt BT_SEL 0>,
+                <&macro_wait_time 500>;
 
-            label = "TO_LAYER_0";
+            label = "BT_WIN";
         };
 
         bt_mac: bt_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap &bt BT_SEL 1>, <&macro_wait_time 200>, <&macro_tap &to 4>;
+            bindings =
+                <&tog_off 0 &tog_off 1 &tog_off 2 &tog_off 3 &tog_off 4 &tog_off 5 &tog_off 6 &tog_off 7>,
+                <&macro_wait_time 200>,
+                <&bt BT_SEL 1>,
+                <&macro_wait_time 500>,
+                <&tog_on 4>;
 
             label = "BT_MAC";
         };
@@ -210,10 +216,10 @@
 
         bt {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans            &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans                                                  &bt BT_CLR_ALL
+&trans  &trans  &trans  &trans  &trans                         &bt_win  &bt_mac  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans            &trans       &trans   &trans   &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &bootloader  &trans   &trans   &trans        &trans        &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans                                        &bt BT_CLR_ALL
             >;
 
             sensor-bindings = <&scroll_up_down>;
