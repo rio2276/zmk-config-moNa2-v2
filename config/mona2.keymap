@@ -40,9 +40,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tab &bt BT_SEL 0>,
+                <&macro_tap &bt BT_SEL 0>,
                 <&macro_wait_time 200>,
-                <&macro_tab &to 0>;
+                <&macro_tap &to 0>;
 
             label = "TO_LAYER_0";
         };
@@ -50,7 +50,7 @@
         bt_mac: bt_mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&bt BT_SEL 1>, <&macro_wait_time 200>, <&to 4>;
+            bindings = <&macro_tap &bt BT_SEL 1>, <&macro_wait_time 200>, <&macro_tap &to 4>;
 
             label = "BT_MAC";
         };
