@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: mona2}
 layers:
   win_1:
-  - Q
+  - {t: Q, h: bt}
   - W
   - E
   - R
@@ -28,7 +28,7 @@ layers:
   - V
   - B
   - {t: TAB, h: win_4}
-  - {t: B, h: bt}
+  - {t: B, h: win_4}
   - N
   - M
   - ','
@@ -131,9 +131,9 @@ layers:
   - ESC
   win_4:
   - {t: ▽, type: trans}
-  - Ctl+Sft+TAB
-  - PRINTSCREEN
-  - Ctl+TAB
+  - Sft+Gui+LEFT
+  - Gui+UP ARROW
+  - Gui+Sft+RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -142,9 +142,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - Gui+LEFT ARROW
-  - Gui+RIGHT ARROW
-  - Ctl+Gui+LEFT ARROW
-  - Ctl+Gui+RIGHT ARROW
+  - Gui+DOWN
+  - Gui+RIGHT
+  - {t: ▽, type: trans}
   - Sft+HOME
   - HOME
   - LEFT ARROW
@@ -152,9 +152,9 @@ layers:
   - RIGHT ARROW
   - PAGE UP
   - {t: ▽, type: trans}
-  - LEFT SHIFT
-  - Gui+Sft+LEFT ARROW
-  - Gui+Sft+RIGHT ARROW
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - Sft+END
@@ -164,16 +164,16 @@ layers:
   - {t: ▽, type: trans}
   - PAGE DOWN
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT ALT
+  - LEFT COMMAND
   - LEFT SHIFT
   - {t: ▽, type: trans}
   - LEFT CONTROL
-  - DELETE
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ESCAPE
   mac_1:
-  - Q
+  - {t: Q, h: bt}
   - W
   - E
   - R
@@ -183,7 +183,7 @@ layers:
   - I
   - O
   - {t: P, h: '5'}
-  - A
+  - {t: A, h: LEFT ALT}
   - S
   - D
   - F
@@ -200,7 +200,7 @@ layers:
   - V
   - B
   - {t: TAB, h: mac_4}
-  - {t: B, h: bt}
+  - {t: B, h: mac_4}
   - N
   - M
   - ','
@@ -208,10 +208,10 @@ layers:
   - /
   - {t: Sft+SPACE, h: '5'}
   - LALT
-  - LEFT CONTROL
-  - {t: INTERNATIONAL 1, h: LEFT SHIFT}
+  - LEFT COMMAND
+  - {t: LANG2, h: LEFT SHIFT}
   - {t: SPACE, h: mac_3}
-  - {t: INTERNATIONAL 2, h: LEFT COMMAND}
+  - {t: LANG1, h: LEFT CONTROL}
   - BSPC
   - {t: ENTER, h: mac_2}
   - ESC
@@ -251,10 +251,10 @@ layers:
   - '~'
   - Sft+Gui+4
   - LEFT ALT
-  - LEFT CONTROL
+  - LEFT COMMAND
   - LEFT SHIFT
   - {t: ▽, type: trans}
-  - LEFT COMMAND
+  - LEFT CONTROL
   - BACKSPACE
   - {type: held}
   - ESCAPE
@@ -294,56 +294,56 @@ layers:
   - /
   - {t: ▽, type: trans}
   - LEFT ALT
-  - LEFT CONTROL
+  - LEFT COMMAND
   - LEFT SHIFT
   - {type: held}
-  - LEFT COMMAND
+  - LEFT CONTROL
   - '0'
   - .
   - ESCAPE
   mac_4:
   - {t: ▽, type: trans}
+  - Alt+Ctl+Gui+N
+  - Alt+Ctl+Gui+UP ARROW
+  - Alt+Ctl+Gui+P
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - UP ARROW
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Alt+Ctl+Gui+LEFT
+  - Alt+Ctl+Gui+DOWN
+  - Alt+Ctl+Gui+RIGHT
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+Sft+LEFT
+  - Ctl+LEFT ARROW
+  - LEFT
+  - DOWN
+  - RIGHT
+  - PAGE UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
+  - Sft+Ctl+RIGHT
+  - Ctl+RIGHT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - PAGE DOWN
+  - {t: ▽, type: trans}
+  - LEFT ALT
+  - LEFT COMMAND
+  - LSHIFT
+  - {t: ▽, type: trans}
+  - LEFT CONTROL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ESCAPE
   '5':
   - DELETE
   - {t: ▽, type: trans}
@@ -431,7 +431,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   bt:
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -458,7 +458,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '&bootloader', type: held}
+  - '&bootloader'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
