@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: mona2}
 layers:
-  default:
+  win_1:
   - Q
   - W
   - E
@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - {t: P, h: '5'}
-  - A
+  - {t: A, h: LEFT ALT}
   - S
   - D
   - F
@@ -27,8 +27,8 @@ layers:
   - C
   - V
   - B
-  - {t: TAB, h: '3'}
-  - {t: B, h: '4'}
+  - {t: TAB, h: win_4}
+  - {t: B, h: bt}
   - N
   - M
   - ','
@@ -38,12 +38,12 @@ layers:
   - LEFT ALT
   - LEFT COMMAND
   - {t: INTERNATIONAL 5, h: LEFT SHIFT}
-  - {t: SPACE, h: '2'}
-  - {t: INTERNATIONAL 4, h: LEFT CONTROL}
-  - BACKSPACE
-  - {t: ENTER, h: '1'}
+  - {t: SPACE, h: win_3}
+  - {t: INTERNATIONAL 4, h: LEFT CONTROL, type: held}
+  - {t: BACKSPACE, type: held}
+  - {t: ENTER, h: win_2}
   - ESCAPE
-  '1':
+  win_2:
   - Sft+7
   - Sft+8
   - Sft+9
@@ -86,7 +86,7 @@ layers:
   - BACKSPACE
   - {type: held}
   - ESCAPE
-  '2':
+  win_3:
   - F7
   - F8
   - F9
@@ -129,7 +129,7 @@ layers:
   - '0'
   - .
   - ESC
-  '3':
+  win_4:
   - {t: ▽, type: trans}
   - Ctl+Sft+TAB
   - PRINTSCREEN
@@ -172,49 +172,49 @@ layers:
   - DELETE
   - {t: ▽, type: trans}
   - ESCAPE
-  '4':
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: '&bootloader', type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BT CLR
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BT CLR ALL
+  mac_1:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - A
+  - S
+  - D
+  - F
+  - G
+  - '='
+  - H
+  - J
+  - K
+  - L
+  - '-'
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - TAB
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {t: Sft+Gui+4, h: '5'}
+  - LALT
+  - LGUI
+  - {t: LANGUAGE 2, h: LEFT SHIFT}
+  - SPACE
+  - {t: LANGUAGE 1, h: LEFT COMMAND}
+  - BSPC
+  - ENTER
+  - ESC
   '5':
   - DELETE
   - {t: ▽, type: trans}
@@ -301,8 +301,51 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  bt:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '&bootloader', type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT CLR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT CLR ALL
 combos:
 - p: [39, 38]
-  k: {t: ESC, h: '4'}
+  k: {t: ESC, h: win_1}
 - p: [11, 12]
   k: TAB
