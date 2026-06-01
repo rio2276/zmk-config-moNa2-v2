@@ -200,7 +200,7 @@ layers:
   - V
   - B
   - {t: TAB, h: mac_4}
-  - {t: B, h: mac_4}
+  - {t: B, h: bt}
   - N
   - M
   - ','
