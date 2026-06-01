@@ -28,7 +28,7 @@ layers:
   - V
   - B
   - {t: TAB, h: win_4}
-  - {t: B, h: win_4}
+  - {t: B, h: bt}
   - N
   - M
   - ','
