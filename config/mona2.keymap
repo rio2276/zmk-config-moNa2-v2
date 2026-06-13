@@ -83,7 +83,7 @@
             bindings = <&mo>, <&bt_win>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <400>;
         };
 
         scroll_up_down: mouse_wheel_up_down {
