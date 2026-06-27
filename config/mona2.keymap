@@ -153,7 +153,7 @@
         mac_1 {
             bindings = <
 &lt 10 Q         &kp W     &kp E             &kp R                 &kp T                                             &kp Y        &kp U  &kp I      &kp O    &lt 8 P
-&mt LEFT_ALT A   &kp S     &kp D             &kp F                 &kp G                                  &kp EQUAL  &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_ALT A   &kp S     &kp D             &kp F                 &kp G                                  &kp EQUAL  &kp H        &kp J  &kp K      &kp L    &lt 9 MINUS
 &kp Z            &kp X     &kp C             &kp V                 &kp B        &lt 7 TAB                 &lt 10 B   &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH
 &lt 8 LS(SPACE)  &kp LALT  &kp LEFT_COMMAND  &mt LEFT_SHIFT LANG2  &lt 6 SPACE  &mt LEFT_CONTROL LANG1    &kp BSPC   &lt 5 ENTER                             &kp ESC
             >;
@@ -166,7 +166,7 @@
 &kp SQT               &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans          &trans                                                    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans             &kp DOLLAR     &kp AT_SIGN
 &kp DOLLAR            &kp PERCENT           &kp AMPERSAND          &kp COLON       &kp LS(DOUBLE_QUOTES)                      &kp COLON      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES  &kp PERCENT    &kp CARET
 &kp EXCLAMATION       &kp DOUBLE_QUOTES     &kp HASH               &kp SEMICOLON   &kp SQT                &kp TAB             &kp SEMICOLON  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp SQT            &kp AMPERSAND  &kp TILDE
-&kp LS(LG(NUMBER_4))  &kp LEFT_ALT          &kp LEFT_COMMAND       &kp LEFT_SHIFT  &trans                 &kp LEFT_CONTROL    &kp BACKSPACE  &trans                                                                         &kp ESCAPE
+&kp LS(LC(NUMBER_4))  &kp LEFT_ALT          &kp LEFT_COMMAND       &kp LEFT_SHIFT  &trans                 &kp LEFT_CONTROL    &kp BACKSPACE  &trans                                                                         &kp ESCAPE
             >;
 
             sensor-bindings = <&scroll_right_left>;
