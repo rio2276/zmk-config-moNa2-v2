@@ -193,7 +193,7 @@ layers:
   - J
   - K
   - L
-  - '-'
+  - {t: '-', h: '6'}
   - Z
   - X
   - C
@@ -249,7 +249,7 @@ layers:
   - ''''
   - '&'
   - '~'
-  - Sft+Gui+4
+  - Sft+Ctl+4
   - LEFT ALT
   - LEFT COMMAND
   - LEFT SHIFT
