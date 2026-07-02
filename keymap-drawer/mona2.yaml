@@ -11,7 +11,7 @@ layers:
   - I
   - O
   - {t: P, h: '8'}
-  - {t: A, h: LEFT ALT}
+  - A
   - S
   - D
   - F
@@ -183,7 +183,7 @@ layers:
   - I
   - O
   - {t: P, h: '8'}
-  - {t: A, h: LEFT ALT}
+  - A
   - S
   - D
   - F
@@ -206,7 +206,7 @@ layers:
   - ','
   - .
   - /
-  - {t: Sft+SPACE, h: '8'}
+  - {t: Ctl+SPACE, h: '8'}
   - LALT
   - LEFT COMMAND
   - {t: LANG2, h: LEFT SHIFT}
