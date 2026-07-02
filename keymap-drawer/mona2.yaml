@@ -10,7 +10,7 @@ layers:
   - U
   - I
   - O
-  - {t: P, h: '5'}
+  - {t: P, h: '8'}
   - {t: A, h: LEFT ALT}
   - S
   - D
@@ -21,7 +21,7 @@ layers:
   - J
   - K
   - L
-  - {t: '-', h: '6'}
+  - {t: '-', h: '9'}
   - Z
   - X
   - C
@@ -34,7 +34,7 @@ layers:
   - ','
   - .
   - /
-  - {t: Alt+`, h: '5'}
+  - {t: Alt+`, h: '8'}
   - LEFT ALT
   - LEFT COMMAND
   - {t: INTERNATIONAL 5, h: LEFT SHIFT}
@@ -182,7 +182,7 @@ layers:
   - U
   - I
   - O
-  - {t: P, h: '5'}
+  - {t: P, h: '8'}
   - {t: A, h: LEFT ALT}
   - S
   - D
@@ -193,7 +193,7 @@ layers:
   - J
   - K
   - L
-  - {t: '-', h: '6'}
+  - {t: '-', h: '9'}
   - Z
   - X
   - C
@@ -206,7 +206,7 @@ layers:
   - ','
   - .
   - /
-  - {t: Sft+SPACE, h: '5'}
+  - {t: Sft+SPACE, h: '8'}
   - LALT
   - LEFT COMMAND
   - {t: LANG2, h: LEFT SHIFT}
@@ -344,7 +344,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ESCAPE
-  '5':
+  '8':
   - DELETE
   - {t: ▽, type: trans}
   - Ctl+X
@@ -387,7 +387,7 @@ layers:
   - BSPC
   - DELETE
   - ESCAPE
-  '6':
+  '9':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
