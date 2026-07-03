@@ -10,10 +10,6 @@
 #define MOUSE 8
 #define SCROLL 9
 
-&trackball {
-    scroll-layers = <9>;
-};
-
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
